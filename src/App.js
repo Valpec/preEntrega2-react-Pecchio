@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemDetailContainer from './components/ItemDetailContainer.js/ItemDetailContainer';
+
+
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="App">
+    //   <Navbar/>
+    //   <ItemListContainer greeting='Cargando...'/>
+    //   {/* <ItemDetailContainer/> */}
+    // </div>
+     <BrowserRouter className="App">
+      <Navbar/>
+      <Routes>
+        <Route exact path='/' element={<ItemListContainer/>}/>
+        <Route exact path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
+        <Route exact path='/item/:itemId' element={<ItemDetailContainer/>}/>
+        <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

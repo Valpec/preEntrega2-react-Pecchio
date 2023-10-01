@@ -1,0 +1,41 @@
+
+.botonSumaResta{
+    display: inline-flex;
+    justify-content: center;
+    margin: .5px ;
+    padding: .3rem;
+    border-radius: 7% ;
+
+}
+
+.botonSumaResta h4{
+    margin: 0 .9rem;
+}
+.Button{
+    background-color: transparent;
+    border: 0px ;
+    display: flex;
+}
+.Button:hover{
+    border-bottom: solid 1px black;
+}
+.ButtonCompra{
+    background-color: #D4B2A7;
+}
+
+.ButtonCompra:hover{
+    background-color: #EAC9C1;
+}
+
+.ButtonCompra{
+    align-self: center;
+    border-radius: .2rem;
+    border: 0px ;
+    padding: .5rem 1rem;
+}
+
+
+.buttonsCompra{
+    display: flex;
+    justify-content: space-between;
+}

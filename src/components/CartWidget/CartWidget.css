@@ -1,0 +1,16 @@
+.carritoNavbar{
+    padding-right: 2rem;
+}
+#cantProdsCarrito{
+    position: absolute;
+    top: 1rem;
+    right: 2rem; 
+    width: 20px;
+    height: 20px;
+    background-color: #D4B2A7;
+    border-radius: 50%;
+    color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

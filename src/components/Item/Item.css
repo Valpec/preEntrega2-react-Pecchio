@@ -1,0 +1,30 @@
+.itemCatalogo{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.imgItem{
+    max-width: 18rem ;
+    align-self: center;
+    margin: .5rem 0rem;
+}
+
+.zonaTexto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nombreItem{
+    color: black;
+    text-decoration: underline;
+}
+
+.catItem{
+    color: #a38f85;
+}
+.precioItem{
+    padding-top: .5rem;
+}
