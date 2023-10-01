@@ -8,11 +8,6 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Navbar/>
-    //   <ItemListContainer greeting='Cargando...'/>
-    //   {/* <ItemDetailContainer/> */}
-    // </div>
      <BrowserRouter className="App">
       <Navbar/>
       <Routes>
