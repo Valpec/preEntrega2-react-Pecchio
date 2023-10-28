@@ -28,7 +28,6 @@ const ItemDetail = ({ id, categoria, nombre, precio, imagen, stock }) => {
         <h1 className="nombreItemDetail">{nombre}</h1>
         <h5 className="catItemDetail">{categoria}</h5>
         <h5 className="precioItemDetail">Precio Unitario: ${precio}</h5>
-        {/* <h5 className="precioItemDetail">Subtotal ${precio * quantity}</h5> */}
         <footer className="itemFooter">
          {quantityAdded > 0 ? (
             <Link to='/cart' className='terminarCompra botonCompra'>Terminar Compra</Link>

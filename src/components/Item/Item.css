@@ -17,14 +17,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.nombreItem{
-    color: black;
-    text-decoration: underline;
-}
+
 
 .catItem{
     color: #a38f85;
 }
 .precioItem{
     padding-top: .5rem;
+}
+.footerItem{
+    display: flex;
+    justify-content: space-between;
 }
