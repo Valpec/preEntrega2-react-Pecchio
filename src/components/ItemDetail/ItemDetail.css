@@ -27,3 +27,16 @@
     padding-right: 2rem;
 }
 
+.itemFooter{
+    justify-self: end;
+}
+
+.terminarCompra{
+    text-decoration: none;
+    color: black;
+    background-color: #D4B2A7;
+}
+
+.terminarCompra:hover{
+    background-color: #e2c8bf;
+}

@@ -19,17 +19,18 @@ const NavBar = () => {
                 <Nav>
                     <Nav.Link as={NavLink} to ={'/'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >INICIO</Nav.Link>
                     <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown" >
-                        <NavDropdown.Item as={NavLink}to ={'/categoria/vela'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >Velas</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink}to ={'/categoria/esencia'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Esencias</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink}to ={'/categoria/textil'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Textiles</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink}to ={'/categoria/decoracion'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Decoraciones</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink}to ={'/categoria/Vela'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >Velas</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink}to ={'/categoria/Esencia'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Esencias</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink}to ={'/categoria/Textil'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Textiles</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink}to ={'/categoria/Decoracion'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Decoraciones</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link  as={NavLink}to ={'/'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >NOSOTROS</Nav.Link>
                     <Nav.Link  as={NavLink}to ={'/'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >FAQs</Nav.Link>
                        <Nav.Link  as={NavLink}to ={'/'}className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}  >CONTACTO</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
-            <CartWidget />
+            <NavLink to='/cart '> <CartWidget /></NavLink>
+            
 
         </Container>
     </Navbar>

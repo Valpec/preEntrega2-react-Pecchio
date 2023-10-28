@@ -11,23 +11,23 @@
 .botonSumaResta h4{
     margin: 0 .9rem;
 }
-.Button{
+.boton{
     background-color: transparent;
     border: 0px ;
     display: flex;
 }
-.Button:hover{
+.boton:hover{
     border-bottom: solid 1px black;
 }
-.ButtonCompra{
-    background-color: #D4B2A7;
+.botonCompra{
+    background-color: #EDE9E3;
 }
 
-.ButtonCompra:hover{
-    background-color: #EAC9C1;
+.botonCompra:hover{
+    background-color: #d7d3d2;
 }
 
-.ButtonCompra{
+.botonCompra{
     align-self: center;
     border-radius: .2rem;
     border: 0px ;
@@ -35,7 +35,7 @@
 }
 
 
-.buttonsCompra{
+.botonesCompra{
     display: flex;
     justify-content: space-between;
 }

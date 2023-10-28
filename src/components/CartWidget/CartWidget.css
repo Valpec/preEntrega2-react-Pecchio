@@ -4,13 +4,15 @@
 #cantProdsCarrito{
     position: absolute;
     top: 1rem;
-    right: 2rem; 
-    width: 20px;
-    height: 20px;
+    right: 2.5rem; 
+    width: 25px;
+    height: 25px;
     background-color: #D4B2A7;
     border-radius: 50%;
     color: #212529;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
+    align-content: center;
+    text-align: center;
   }

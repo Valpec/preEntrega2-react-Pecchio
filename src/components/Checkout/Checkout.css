@@ -1,0 +1,30 @@
+.formLabel {
+    position: absolute;
+    top: 0;
+
+  }
+  
+  .formInput {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #212529;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    width: 25rem;
+  }
+
+.confirmacion{
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.formCheckout{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botonCompra:disabled{
+    background-color: #afadaa;
+}

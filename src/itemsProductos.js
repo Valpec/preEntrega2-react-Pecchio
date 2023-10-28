@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     {
         id: 1,
         categoria: "Vela",
@@ -134,7 +134,7 @@ export const getProductById = (productId) => {
 
         setTimeout(() => {
             resolve(products.find(prod => prod.id == productId))
-            console.log(products.find(prod => prod.id == productId))
+           // console.log(products.find(prod => prod.id == productId))
         }, 500)
     })
 }

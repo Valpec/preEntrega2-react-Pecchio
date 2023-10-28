@@ -7,6 +7,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     const increment = () => {
         if (quantity < stock) {
             setQuantity(quantity+1)
+            console.log(`se suma`)
         }
     }
     const decrement = () =>{
@@ -17,14 +18,14 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
     return(
 
-<div className='buttonsCompra'>
+<div className='botonesCompra'>
     <div className='botonSumaResta'>
-        <button className='Button' onClick={decrement}>-</button>
+        <button className='boton' onClick={decrement}>-</button>
         <h4> {quantity}</h4>
-        <button className='Button' onClick={increment}>+</button>
+        <button className='boton' onClick={increment}>+</button>
     </div>
     <div>
-        <button className='ButtonCompra' onClick={() => onAdd(quantity)} disabled={!stock}>
+        <button className='botonCompra' onClick={() => onAdd(quantity)} disabled={!stock}>
             Agregar al carrito
         </button>
     </div>
