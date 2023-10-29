@@ -7,7 +7,7 @@ import { CartContext } from '../../context/CartContext'
 const Checkout = () => {
     const [user, setUser] = useState({})
     const [validateEmail, setValidateEmail] = useState('')
-    const { cart, cartTotal, clear } = useContext(CartContext)
+    const { cart, cartTotal, clearCart } = useContext(CartContext)
     const [orderId, setOrderId] = useState('')
 
     const datosComprador = (e) => {
@@ -25,14 +25,14 @@ const Checkout = () => {
             let order = {
                 user,
                 product: cart,
-                total: cartTotal,
+                total: cartTotal(),
                 date: serverTimestamp()
             }
             const ventas = collection(db, 'orders')
             addDoc(ventas, order)
                 .then((response) => {
                     setOrderId(response.id)
-                    clear()
+                    clearCart()
 
                 })
                 .catch((error) => console.log(error))
